@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Calculator" >
+        <div class="slds-m-around_medium lgc-bg" >
+            <lightning-input  type="text" label="Enter First Number" onchange={firstNumberInput}></lightning-input>
+            <lightning-input  type="text" label="Enter Second Number" onchange={secondNumberInput}></lightning-input>
+        </div>
+        
+            <lightning-button variant="brand" label="Add" title="Primary action" onclick={AddHandleClick} class="slds-m-left_medium"></lightning-button>
+            <lightning-button variant="brand" label="Sub" title="Primary action" onclick={SubHandleClick} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Mult" title="Primary action" onclick={MultHandleClick} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Div" title="Primary action" onclick={DivHandleClick} class="slds-m-left_x-small"></lightning-button>
+        <div class="slds-m-around_medium lgc-bg">
+            {result}
+        </div>
+            
+    </lightning-card>
+</template>
